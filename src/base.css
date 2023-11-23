@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+    @apply bg-neutral-grayTwo;
+}
+
+.btn {
+    @apply   font-semibold bg-primary-cyan text-white;
+}
+
+
+.btn-rounded-max {
+    @apply rounded-full;
+}
+
+.url-short{
+    background-image: url(/images/bg-shorten-mobile.svg);
+    @apply bg-primary-darkVoilet bg-no-repeat bg-auto xl:bg-cover bg-right-top md:bg-left-top;
+}
+
+.boost {
+    background-image: url(/images/bg-boost-mobile.svg);
+    @apply bg-primary-darkVoilet bg-no-repeat bg-cover bg-center ;
+}
+
+@media only screen and (min-width: 768px) {
+    .url-short {
+      background-image: url(/images/bg-shorten-desktop.svg);
+    }
+    .boost {
+      background-image: url(/images/bg-boost-desktop.svg);
+    }
+
+  }

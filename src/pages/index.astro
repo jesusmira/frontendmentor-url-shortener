@@ -1,0 +1,22 @@
+---
+import Layout from "../Layout.astro";
+import { Advanced } from "../components/Advanced";
+import { Hero } from "../components/header/Hero";
+import { UrlShorty } from "../components/url/UrlShorty";
+import { Features } from "../components/features/Features";
+import { HeaderComponent } from "../components/header/HeaderComponent";
+import { Boost } from "../components/Boost";
+import { Menu } from "../components/footer/Menu";
+---
+
+<Layout title="Shortly URL shortening API Challenge" >
+	<main class="bg-white">
+		<HeaderComponent client:load />
+		<Hero />
+	</main>
+	<UrlShorty client:load />
+	<Advanced />
+	<Features />
+	<Boost />
+	<Menu />
+</Layout>
